@@ -76,10 +76,10 @@
                                 <nav class="main-menu d-none d-lg-inline-block">
                                     <ul class="navigation">
                                         <li><a class="active" href="#">Home</a></li>
-                                        <li><a href="service.html">Services</a></li>
-                                        <li><a href="project.html">Projects</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="services">Services</a></li>
+                                        <li><a href="projects">Projects</a></li>
+                                        <li><a href="contact">Contact</a></li>
+                                        <li><a href="about">About</a></li>
                                         <!--<li class="menu-item-has-children">-->
                                         <!--    <a href="#">Pages</a>-->
                                         <!--    <ul class="sub-menu">-->
