@@ -26,6 +26,11 @@ class HomeController extends Controller
         return view('service');
     }
 
+    public function projects()
+    {
+        return view('project');
+    }
+
     public function blog()
     {
         return view('blog');
