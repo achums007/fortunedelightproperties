@@ -7,14 +7,10 @@ use App\Http\Controllers\HomeController;
 //     return view('welcome');
 // });
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/services', [HomeController::class, 'services'])->name('services');
 Route::get('/projects', [HomeController::class, 'projects'])->name('projects');
-<<<<<<< HEAD
-Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
-Route::get('/blog/{id}', [HomeController::class, 'blogDetail'])->name('blog.detail');
-=======
-// Route::get('/blog', [HomeController::class, 'blog'])->name('blog');
-// Route::get('/blog/{id}', [HomeController::class, 'blogDetail'])->name('blog.detail');
->>>>>>> main
+
+

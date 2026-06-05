@@ -1,336 +1,661 @@
 @extends('layouts.app')
 
-<<<<<<< HEAD
+
 @section('title', 'Our Services - Fortune Delight Properties')
 
 @section('content')
-<!-- Start Breadcrumb Section -->
-<!-- ========================================== -->
-<section class="tv-breadcrumb-section">
-    <div class="tv-breadcrumb-inner mx-30 ml-mx-0 position-relative overflow-hidden br-30 ml-br-0">
-        <div class="bg image"><img src="{{ asset('public/assets/images/bg-img/breadcrumb.webp') }}" alt="Breadcrumb"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title-outer">
-                        <div class="page-title">
-                            <h2 class="title">Services</h2>
-                            <ul class="page-breadcrumb">
-                                <li><a href="{{ route('home') }}"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
-                                <li><span>/</span> Services</li>
-                            </ul>
+    <!DOCTYPE html>
+
+
+        <!--========  Start Sidebar Area ========-->
+        <div id="sidebar-area" class="sidebar">
+            <div class="sidebar-overlay"></div>
+            <div class="sidebar-wrapper">
+                <button class="sidebar-close-btn">
+                    <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="12.7px" viewBox="0 0 16 12.7" style="enable-background:new 0 0 16 12.7" xml:space="preserve">
+                        <g>
+                            <rect x="0" y="5.4" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.1569 7.5208)" width="16" height="2"></rect>
+                            <rect x="0" y="5.4" transform="matrix(0.7071 0.7071 -0.7071 0.7071 6.8431 -3.7929)" width="16" height="2"></rect>
+                        </g>
+                    </svg>
+                </button>
+                <div class="sidebar-content">
+                    <div class="sidebar-logo">
+                        <a class="dark-logo" href="index.html"><img src="{{ asset('public/assets/images/logo/logo.png') }}" alt="logo"></a>
+                    </div>
+                    <div class="sidebar-menu-wrap"></div>
+                    <div class="sidebar-about">
+                        <h6>Explore the world</h6>
+                        <div class="sidebar-header">
+                            <h3>World's leading Business agency</h3>
                         </div>
-                        <div class="image-box md-d-none">
-                            <div class="shapes">
-                                <div class="shape shape-1"><img src="{{ asset('public/assets/images/shapes/circle.webp') }}" alt="Circle"></div>
-                                <div class="shape shape-2 spin2"><img src="{{ asset('public/assets/images/shapes/star.webp') }}" alt="Star"></div>
-                                <div class="shape shape-3 "><img src="{{ asset('public/assets/images/shapes/snake.webp') }}" alt="Snake"></div>
-                                <div class="shape shape-4 jump3"><img src="{{ asset('public/assets/images/shapes/doot.webp') }}" alt="Dot"></div>
+                    </div>
+                    <!-- Instagram Feed Section -->
+                    <div class="instafeed-wrapper">
+                    <div class="insta-item">
+                        <a href="https://www.instagram.com" target="_blank">
+                        <img src="{{ asset('public/assets/images/sidebar/sidebar1.jpeg') }}" alt="">
+                        <span class="overlay"><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="insta-item">
+                        <a href="https://www.instagram.com" target="_blank">
+                        <img src="{{ asset('public/assets/images/sidebar/sidebar-2.jpg') }}" alt="">
+                        <span class="overlay"><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="insta-item">
+                        <a href="https://www.instagram.com" target="_blank">
+                        <img src="{{ asset('public/assets/images/sidebar/sidebar-3.jpg') }}" alt="">
+                        <span class="overlay"><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="insta-item">
+                        <a href="https://www.instagram.com" target="_blank">
+                        <img src="{{ asset('public/assets/images/sidebar/sidebar-4.jpg') }}" alt="">
+                        <span class="overlay"><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="insta-item">
+                        <a href="https://www.instagram.com" target="_blank">
+                        <img src="{{ asset('public/assets/images/sidebar/sidebar-5.jpg') }}" alt="">
+                        <span class="overlay"><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    <div class="insta-item">
+                        <a href="https://www.instagram.com" target="_blank">
+                        <img src="{{ asset('public/assets/images/sidebar/sidebar-6.jpg') }}" alt="">
+                        <span class="overlay"><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                    </div>
+                    </div>
+                    <!-- mail submit -->
+                    <p class="text-center mt-40">Get latest update for our trusted applications</p>
+                    <form class="newsletter-form" action="https://formspree.io/f/mzbnjrnb" method="post">
+                        <div class="form-group">
+                            <input type="email" name="email" class="email" value="" placeholder="Enter Your Email" autocomplete="on" required="">
+                            <button type="submit">
+                                <i class="far fa-paper-plane"></i>
+                                <span class="btn-title"></span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <ul class="sidebar-social">
+                        <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="g-plus"><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--======== / Sidebar Area ========-->
+
+
+        <!-- Start Breadcrumb Section -->
+        <!-- ========================================== -->
+        <section class="tv-breadcrumb-section">
+            <div class="tv-breadcrumb-inner mx-30 ml-mx-0 position-relative overflow-hidden br-30 ml-br-0">
+                <div class="bg image"><img src="{{ asset('public/assets/images/bg-img/breadcrumb.webp') }}" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="title-outer">
+                                <div class="page-title">
+                                    <h2 class="title">Services</h2>
+                                    <ul class="page-breadcrumb">
+                                        <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                                        <li><span>/</span> Services</li>
+                                    </ul>
+                                </div>
+                                <div class="image-box md-d-none">
+                                    <div class="shapes">
+                                        <div class="shape shape-1"><img src="{{ asset('public/assets/images/shapes/circle.webp') }}" alt=""></div>
+                                        <div class="shape shape-2 spin2"><img src="{{ asset('public/assets/images/shapes/star.webp') }}" alt=""></div>
+                                        <div class="shape shape-3 "><img src="{{ asset('public/assets/images/shapes/snake.webp') }}" alt=""></div>
+                                        <div class="shape shape-4 jump3"><img src="{{ asset('public/assets/images/shapes/doot.webp') }}" alt=""></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-=======
-@section('title', 'Home - Fortune Delight Properties')
+        </section>
 
-@section('content')
->>>>>>> main
 
-<!--==============================
-Feature Section One
-==============================-->
-<section class="tv-feature-section bg-light space">
-    <div class="container">
-        <div class="row gy-30">
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="tv-feature-item wow fadeInLeft" data-wow-delay=".5s">
-                    <div class="client-social-proof">
-                        <div class="social">
-                            <img src="{{ asset('public/assets/images/social/social-img01.webp') }}" alt="Client 01">
-                            <img src="{{ asset('public/assets/images/social/social-img02.webp') }}" alt="Client 02">
-                            <img src="{{ asset('public/assets/images/social/social-img03.webp') }}" alt="Client 03">
-                            <h4>+5K</h4>
+
+        <!--==============================
+        Freature Section One
+        ==============================-->
+        <section class="tv-feature-section bg-light space">
+            <div class="container">
+                <div class="row gy-30">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="tv-feature-item wow fadeInLeft" data-wow-delay=".5s">
+                            <div class="client-social-proof">
+                                <div class="social">
+                                    <img src="{{ asset('public/assets/images/social/social-img01.webp') }}" alt="Client 01">
+                                    <img src="{{ asset('public/assets/images/social/social-img02.webp') }}" alt="Client 02">
+                                    <img src="{{ asset('public/assets/images/social/social-img03.webp') }}" alt="Client 03">
+                                    <h4>+3K</h4>
+                                </div>
+                                <div class="count-box mt-30"><span class="count-number odometer" data-count="3,600"></span></div>
+                                <div class="rating-viewers">active customers</div>
+                                <a href="contact.html" class="theme-btn style2 mt-20 br-30">
+                                    <span class="link-effect">
+                                        <span class="effect-1">Explore More</span>
+                                        <span class="effect-1">Explore More</span>
+                                    </span>
+                                    <span class="arrow-all-2">
+                                        <i>
+                                            <svg width="11" height="12" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z" fill="white"></path>
+                                            </svg>
+                                            <svg width="11" height="12" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z" fill="white"></path>
+                                            </svg>
+                                        </i>
+                                    </span>
+                                </a>
+                                <div class="scribble-shape1 moving">
+                                    <img src="{{ asset('public/assets/images/feature/scribble.webp') }}" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <div class="count-box mt-30"><span class="count-number odometer" data-count="5200">5,200</span></div>
-                        <div class="rating-viewers">Satisfied Homeowners</div>
-                        <a href="{{ route('contact') }}" class="theme-btn style2 mt-20 br-30">
-                            <span class="link-effect">
-                                <span class="effect-1">Contact An Agent</span>
-                                <span class="effect-1">Contact An Agent</span>
-                            </span>
-                            <span class="arrow-all-2">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="tv-feature-box wow fadeInLeft" data-wow-delay=".7s">
+                            <div class="icon-top">
+                                <div class="icon">
+                                    <i>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z" fill="white"></path>
+                                        </svg>
+                                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z" fill="white"></path>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="logo mb-40"><img src="{{ asset('public/assets/images/feature/hm1-icon01.webp') }}" alt=""></div>
+                            <h2>IT Consultancy and <br>Management</h2>
+                            <p>Reintermediate technically sound to processes whereas market</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="tv-feature-box bg-theme3 wow fadeInLeft" data-wow-delay=".9s">
+                        <div class="icon-top">
+                            <div class="icon style2 bg-dark">
                                 <i>
-                                    <svg width="11" height="12" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z" fill="white"></path>
                                     </svg>
-                                    <svg width="11" height="12" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z" fill="white"></path>
                                     </svg>
                                 </i>
-                            </span>
-                        </a>
-                        <div class="scribble-shape1 moving">
-                            <img src="{{ asset('public/assets/images/feature/scribble.webp') }}" alt="Scribble">
+                            </div>
+                        </div>
+                        <div class="logo mb-40"><img src="{{ asset('public/assets/images/feature/hm1-icon02.webp') }}" alt=""></div>
+                        <h2>Digital Transformation <br>And Automation</h2>
+                        <p>Reintermediate technically sound to processes whereas market</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="tv-feature-box wow fadeInLeft" data-wow-delay=".7s">
-                    <div class="icon-top">
-                        <div class="icon">
-                            <i>
-                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z" fill="white"></path>
-                                </svg>
-                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z" fill="white"></path>
-                                </svg>
-                            </i>
-                        </div>
-                    </div>
-                    <div class="logo mb-40"><img src="{{ asset('public/assets/images/about/hm5-icon1.webp') }}" alt="Brokerage Icon"></div>
-                    <h2>Exclusive <br>Dubai Listings</h2>
-                    <p>Access high-value properties in Palm Jumeirah, Downtown, and Dubai Marina before they hit the open market.</p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="tv-feature-box bg-theme3 wow fadeInLeft" data-wow-delay=".9s">
-                    <div class="icon-top">
-                        <div class="icon style2 bg-dark">
-                            <i>
-                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z" fill="white"></path>
-                                </svg>
-                                <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.0035 3.90804L1.41153 12.5L0 11.0885L8.59097 2.49651H1.01922V0.5H12V11.4808H10.0035V3.90804Z" fill="white"></path>
-                                </svg>
-                            </i>
-                        </div>
-                    </div>
-                    <div class="logo mb-40"><img src="{{ asset('public/assets/images/about/hm5-icon2.webp') }}" alt="Advisory Icon"></div>
-                    <h2>Client-First <br>Investment Advice</h2>
-                    <p>Receive tailor-made real estate strategies that maximize capital appreciation and rental yield return on investment.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--==============================
-Service Section Two
-==============================-->
-<section class="tv-service-section space-bottom inner style-2 bg-light">
-    <div class="tv-service-inner position-relative overflow-hidden mx-30 ml-mx-0">
-        <div class="container">
-            <!-- Section Title -->
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="title-wrap two white">
-                        <div class="sub-title-2"><i class="fa-solid fa-circle-check"></i>Services</div>
-                        <h2 class="sec-title text-dark">Premium Real Estate Services <br>Tailored For Global Investors</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row gy-30">
-                <!-- service box -->
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
-                        <div class="inner-box">
-                            <div class="icon"><img src="{{ asset('public/assets/images/service/hm1-icon01.webp') }}" alt="Residential Icon"></div>
-                            <h4 class="title">Residential <br>Sales & Leasing</h4>
-                            <div class="border2 mt-20 mb-20"></div>
-                            <p class="text">Access standard apartments, penthouses, and luxury villas across Dubai. We guide you from initial viewing to final DLD registration.</p>
-                            <a href="{{ route('contact') }}" class="theme-btn w-100 mt-40">
-                                <span class="link-effect">
-                                    <span class="effect-1">Inquire Now</span>
-                                    <span class="effect-1">Inquire Now</span>
-                                </span>
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".3s">
-                        <div class="inner-box">
-                            <div class="icon"><img src="{{ asset('public/assets/images/service/hm1-icon02.webp') }}" alt="Off-Plan Icon"></div>
-                            <h4 class="title">Off-Plan <br>Consultancy</h4>
-                            <div class="border2 mt-20 mb-20"></div>
-                            <p class="text">Maximize your wealth with exclusive off-plan launches from Emaar, Nakheel, Select Group, and DAMAC. Benefit from priority layouts and payment plans.</p>
-                            <a href="{{ route('contact') }}" class="theme-btn w-100 mt-40">
-                                <span class="link-effect">
-                                    <span class="effect-1">Explore Launches</span>
-                                    <span class="effect-1">Explore Launches</span>
-                                </span>
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-<<<<<<< HEAD
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".4s">
-                        <div class="inner-box">
-                            <div class="icon"><img src="{{ asset('public/assets/images/service/hm1-icon03.webp') }}" alt="Management Icon"></div>
-                            <h4 class="title">Property <br>Management</h4>
-                            <div class="border2 mt-20 mb-20"></div>
-                            <p class="text">Complete property management for local and overseas owners. We handle marketing, tenancy contracts, maintenance, and rent collections.</p>
-                            <a href="{{ route('contact') }}" class="theme-btn w-100 mt-40">
-                                <span class="link-effect">
-                                    <span class="effect-1">Manage My Asset</span>
-                                    <span class="effect-1">Manage My Asset</span>
-                                </span>
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".5s">
-                        <div class="inner-box">
-                            <div class="icon"><img src="{{ asset('public/assets/images/service/details-icon01.webp') }}" alt="Golden Visa Icon"></div>
-                            <h4 class="title">Golden Visa <br>Advisory</h4>
-                            <div class="border2 mt-20 mb-20"></div>
-                            <p class="text">We help you secure the 10-year UAE Golden Visa through real estate investments of AED 2,000,000 or more, coordinating with local authorities.</p>
-                            <a href="{{ route('contact') }}" class="theme-btn w-100 mt-40">
-                                <span class="link-effect">
-                                    <span class="effect-1">Learn More</span>
-                                    <span class="effect-1">Learn More</span>
-                                </span>
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".6s">
-                        <div class="inner-box">
-                            <div class="icon"><img src="{{ asset('public/assets/images/service/details-icon02.webp') }}" alt="Valuation Icon"></div>
-                            <h4 class="title">Valuation & <br>Market Appraisal</h4>
-                            <div class="border2 mt-20 mb-20"></div>
-                            <p class="text">Receive data-driven, accurate property evaluations based on recent DLD transactions. Get full clarity on what your asset is worth today.</p>
-                            <a href="{{ route('contact') }}" class="theme-btn w-100 mt-40">
-                                <span class="link-effect">
-                                    <span class="effect-1">Request Valuation</span>
-                                    <span class="effect-1">Request Valuation</span>
-                                </span>
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
-                    <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".7s">
-                        <div class="inner-box">
-                            <div class="icon"><img src="{{ asset('public/assets/images/service/details-icon03.webp') }}" alt="Commercial Icon"></div>
-                            <h4 class="title">Commercial <br>Real Estate</h4>
-                            <div class="border2 mt-20 mb-20"></div>
-                            <p class="text">Expert guidance for acquiring commercial spaces in Dubai's premium business hubs, including Downtown Dubai, JLT, and Business Bay.</p>
-                            <a href="{{ route('contact') }}" class="theme-btn w-100 mt-40">
-                                <span class="link-effect">
-                                    <span class="effect-1">View Spaces</span>
-                                    <span class="effect-1">View Spaces</span>
-                                </span>
-                                <i class="fa-solid fa-arrow-up-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>                                                                        
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--==============================
-Marquee Section
-==============================-->
-<div class="tv-marquee-section bg-light position-relative">
-    <div class="tv-marquee-inner mx-30 ml-mx-0 position-relative">
-        <div class="container-fluid p-0 overflow-hidden">
-            <div class="slider__marquee clearfix marquee-wrap">
-                <ul class="marquee_mode marquee__group">
-                    <li class="item m-item"><img class="icon" src="{{ asset('public/assets/images/icons/marquee-icon.png') }}" alt=""> Luxury Sales</li>
-                    <li class="item m-item"><img class="icon" src="{{ asset('public/assets/images/icons/marquee-icon.png') }}" alt=""> Off-Plan Launches</li>
-                    <li class="item m-item"><img class="icon" src="{{ asset('public/assets/images/icons/marquee-icon.png') }}" alt=""> Property Management</li>
-                    <li class="item m-item"><img class="icon" src="{{ asset('public/assets/images/icons/marquee-icon.png') }}" alt=""> Golden Visa</li>
-                    <li class="item m-item"><img class="icon" src="{{ asset('public/assets/images/icons/marquee-icon.png') }}" alt=""> Dubai Real Estate</li>
-                </ul>
-            </div>
-         </div>
-    </div>
-</div>
-
-<!--==============================
-Process Section One
-==============================-->
-<section class="tv-process-section bg-light position-relative">
-    <div class="p-top-center z-1 wow slideInTop">
-        <img src="{{ asset('public/assets/images/process/hm1-shape01.png') }}" alt="">
-    </div>
-    <div class="process-inner bg-theme3 mx-30 ml-mx-0 br_bl-30 br_br-30 ml-br-0 space overflow-hidden xxl-br-0 position-relative">
-        <div class="container position-relative">
-            <!-- Section Title -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="process-title mt--25">
-                        <h2 class="text-white text-center">PR<span class="text-theme">O</span>CESS</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row gy-30">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="tv-process-item wow fadeInRightBig" data-wow-delay=".2s">
-                        <h4 class="title-text">STEP 01</h4>
-                        <div class="process-box">
-                            <div class="icon"><img src="{{ asset('public/assets/images/process/hm1-icon1.webp') }}" alt="Consultation"></div>
-                            <h3 class="title">Consultation</h3>
-                            <p>We analyze your investment targets, preferred neighborhoods, and budget restrictions.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="tv-process-item wow fadeInRightBig" data-wow-delay=".3s">
-                        <h4 class="title-text">STEP 02</h4>
-                        <div class="process-box">
-                            <div class="icon"><img src="{{ asset('public/assets/images/process/hm1-icon2.webp') }}" alt="Selection"></div>
-                            <h3 class="title">Match & Select</h3>
-                            <p>We source top-tier off-plan properties or secondary market listings tailored to you.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="tv-process-item wow fadeInRightBig" data-wow-delay=".4s">
-                        <h4 class="title-text">STEP 03</h4>
-                        <div class="process-box">
-                            <div class="icon"><img src="{{ asset('public/assets/images/process/hm1-icon3.webp') }}" alt="Acquisition"></div>
-                            <h3 class="title">Acquisition</h3>
-                            <p>We coordinate documentation, DLD signing, and handle legal aspects of the transfer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                    <div class="tv-process-item wow fadeInRightBig" data-wow-delay=".5s">
-                        <h4 class="title-text">STEP 04</h4>
-                        <div class="process-box">
-                            <div class="icon"><img src="{{ asset('public/assets/images/process/hm1-icon4.webp') }}" alt="Management"></div>
-                            <h3 class="title">Yield & Management</h3>
-                            <p>We rent out and manage the asset, delivering high cash flow returns to you.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-=======
             </div>
         </section>
 
 
->>>>>>> main
+
+
+        
+        <!--==============================
+        Service Section Two
+        ==============================-->
+        <section class="tv-service-section space-bottom inner style-2 bg-light">
+            <div class="tv-service-inner position-relative overflow-hidden mx-30 ml-mx-0">
+                <div class="container">
+                    <!-- Section Title -->
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="title-wrap two white" data-wow-duration="2s" data-wow-delay=".0s">
+                                <div class="sub-title-2"><i class="fa-solid fa-circle-check"></i>Services</div>
+                                <h2 class="sec-title text-dark">Empowering Companies with Reliable <br>and Scalable IT Services</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gy-30">
+                        <!-- service box -->
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                <div class="inner-box">
+                                    <div class="icon"><img src="{{ asset('public/assets/images/service/hm1-icon01.webp') }}" alt=""></div>
+                                    <h4 class="title">Content Marketing <br>Optimization</h4>
+                                    <div class="border2 mt-20 mb-20"></div>
+                                    <p class="text">Professionally reintermediate technic turnkey processes whereas discovery technology maintaince</p>
+                                    <a href="project.html" class="theme-btn w-100 mt-40">
+                                        <span class="link-effect">
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                        </span>
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                <div class="inner-box">
+                                    <div class="icon"><img src="{{ asset('public/assets/images/service/hm1-icon02.webp') }}" alt=""></div>
+                                    <h4 class="title">Influencer and Affiliate <br>Marketing</h4>
+                                    <div class="border2 mt-20 mb-20"></div>
+                                    <p class="text">Professionally reintermediate technic turnkey processes whereas discovery technology maintaince</p>
+                                    <a href="project.html" class="theme-btn w-100 mt-40">
+                                        <span class="link-effect">
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                        </span>
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                <div class="inner-box">
+                                    <div class="icon"><img src="{{ asset('public/assets/images/service/hm1-icon03.webp') }}" alt=""></div>
+                                    <h4 class="title">Social Media Marketing <br>Management</h4>
+                                    <div class="border2 mt-20 mb-20"></div>
+                                    <p class="text">Professionally reintermediate technic turnkey processes whereas discovery technology maintaince</p>
+                                    <a href="project.html" class="theme-btn w-100 mt-40">
+                                        <span class="link-effect">
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                        </span>
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                <div class="inner-box">
+                                    <div class="icon"><img src="{{ asset('public/assets/images/service/details-icon01.webp') }}" alt=""></div>
+                                    <h4 class="title">Website and Mobile Apps <br> Development</h4>
+                                    <div class="border2 mt-20 mb-20"></div>
+                                    <p class="text">Professionally reintermediate technic turnkey processes whereas discovery technology maintaince</p>
+                                    <a href="project.html" class="theme-btn w-100 mt-40">
+                                        <span class="link-effect">
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                        </span>
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                <div class="inner-box">
+                                    <div class="icon"><img src="{{ asset('public/assets/images/service/details-icon02.webp') }}" alt=""></div>
+                                    <h4 class="title">Web and Mobile UI/UX <br> Designing</h4>
+                                    <div class="border2 mt-20 mb-20"></div>
+                                    <p class="text">Professionally reintermediate technic turnkey processes whereas discovery technology maintaince</p>
+                                    <a href="project.html" class="theme-btn w-100 mt-40">
+                                        <span class="link-effect">
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                        </span>
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+                            <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".2s">
+                                <div class="inner-box">
+                                    <div class="icon"><img src="{{ asset('public/assets/images/service/details-icon03.webp') }}" alt=""></div>
+                                    <h4 class="title">Video Editing and <br> 3D Animation</h4>
+                                    <div class="border2 mt-20 mb-20"></div>
+                                    <p class="text">Professionally reintermediate technic turnkey processes whereas discovery technology maintaince</p>
+                                    <a href="project.html" class="theme-btn w-100 mt-40">
+                                        <span class="link-effect">
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                            <span class="effect-1">EXPLORE MORE</span>
+                                        </span>
+                                        <i class="fa-solid fa-arrow-up-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                                                                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        
+
+        <!--==============================
+        Marquee Section
+        ==============================-->
+        <div class="tv-marquee-section bg-light position-relative">
+            <div class="tv-marquee-inner mx-30 ml-mx-0 position-relative">
+                <div class="container-fluid p-0 overflow-hidden">
+                    <div class="slider__marquee clearfix marquee-wrap">
+                        <ul class="marquee_mode marquee__group">
+                            <li class="item m-item"><img class="icon" src="{{ asset('public/assets/images/icons/marquee-icon.png') }}" alt=""> Digital Marketing</li>
+                            <li class="item m-item"><img class="icon" src="{{ asset('public/assets/images/icons/marquee-icon.png') }}" alt=""> Branding Solutions</li>
+                            <li class="item m-item"><img class="icon" src="{{ asset('public/assets/images/icons/marquee-icon.png') }}" alt=""> Custom Website</li>
+                            <li class="item m-item"><img class="icon" src="{{ asset('public/assets/images/icons/marquee-icon.png') }}" alt=""> Innovation Design</li>
+                            <li class="item m-item"><img class="icon" src="{{ asset('public/assets/images/icons/marquee-icon.png') }}" alt=""> Cyber Security</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+
+
+
+        <!--==============================
+        Proces Section One
+        ==============================-->
+        <section class="tv-process-section bg-light position-relative">
+            <div class="p-top-center z-1 wow slideInTop">
+                <img src="{{ asset('public/assets/images/process/hm1-shape01.png') }}" alt="">
+            </div>
+            <div class="process-inner bg-theme3  mx-30 ml-mx-0 br_bl-30 br_br-30 ml-br-0  space  overflow-hidden xxl-br-0 position-relative">
+                <div class="container position-relative">
+                    <!-- Section Title -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="process-title mt--25">
+                                <h2 class="text-white text-center">PR<span class="text-theme">O</span>CESS</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gy-30">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tv-process-item wow fadeInRightBig" data-wow-delay=".2s">
+                                <h4 class="title-text">STEP 01</h4>
+                                <div class="process-box">
+                                    <div class="icon"><img src="{{ asset('public/assets/images/process/hm1-icon1.webp') }}" alt=""></div>
+                                    <h3 class="title">Consult Understand</h3>
+                                    <p>Technically sound chains to main and paid marketplace</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tv-process-item wow fadeInRightBig" data-wow-delay=".3s">
+                                <h4 class="title-text">STEP 02</h4>
+                                <div class="process-box">
+                                    <div class="icon"><img src="{{ asset('public/assets/images/process/hm1-icon2.webp') }}" alt=""></div>
+                                    <h3 class="title">Plan Strategize</h3>
+                                    <p>Technically sound chains to main and paid marketplace</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tv-process-item  wow fadeInRightBig" data-wow-delay=".4s">
+                                <h4 class="title-text">STEP 03</h4>
+                                <div class="process-box">
+                                    <div class="icon"><img src="{{ asset('public/assets/images/process/hm1-icon3.webp') }}" alt=""></div>
+                                    <h3 class="title">Implement Execute</h3>
+                                    <p>Technically sound chains to main and paid marketplace</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tv-process-item wow fadeInRightBig" data-wow-delay=".5s">
+                                <h4 class="title-text">STEP 04</h4>
+                                <div class="process-box">
+                                    <div class="icon"><img src="{{ asset('public/assets/images/process/hm1-icon4.webp') }}" alt=""></div>
+                                    <h3 class="title">Support Optimize</h3>
+                                    <p>Technically sound chains to main and paid marketplace</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--==============================
+        Pricing Section One
+        ==============================-->
+        <section class="tv-pricing-section space bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title-wrap text-center three">
+                            <div class="sub-title-2  text-theme"><i class="fa-solid fa-circle-check"></i>Pricing Plans</div>
+                            <h2 class="sec-title">Choose the Perfect Plans for <br> Your Business Growth</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-30 align-items-end">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="tv-pricing-card wow fadeInUp" data-wow-delay=".5s">
+                            <div class="pricing-inner-box">
+                                <div class="pricing-inner">
+                                    <div class="pricing-plan">
+                                        <h5 class="plan">Starter</h5>
+                                        <div class="price">
+                                            <h2>29 USD</h2>
+                                            <span class="billing-cycle">/ month</span>
+                                        </div>
+                                        <p>Organize Daily Task by free</p>
+                                        <a href="contact.html" class="theme-btn mt-25 w-100 br-25">
+                                            <span class="link-effect">
+                                                <span class="effect-1">Join this Plan</span>
+                                                <span class="effect-1">Join this Plan</span>
+                                            </span>
+                                            <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span>
+                                        </a>
+                                        <h4>Key Features</h4>
+                                    </div>
+                                        <ul class="features">
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> 3 Users availble</li>
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> Limited tools</li>
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> Unlimited Supports</li>
+                                            <li class="disabled"><span class="checkmark"><i class="fa-solid fa-circle-x"></i></span> API Access</li>
+                                            <li class="disabled"><span class="checkmark"><i class="fa-solid fa-circle-x"></i></span> Premium apps</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="tv-pricing-card style2 wow fadeInUp" data-wow-delay=".7s">
+                            <div class="popular-badge"><i class="fa-solid fa-fire"></i> Most Popular</div>
+                            <div class="pricing-inner-box">
+                                <div class="top-icon spin"><img src="{{ asset('public/assets/images/pricing/spin-shape02.webp') }}" alt=""></div>
+                                <div class="pricing-inner">
+                                    <div class="pricing-plan">
+                                        <h5 class="plan">Starter</h5>
+                                        <div class="price">
+                                            <h2>39 USD</h2>
+                                            <span class="billing-cycle">/ month</span>
+                                        </div>
+                                        <p>Organize Daily Task by free</p>
+                                        <a href="contact.html" class="theme-btn mt-25 w-100 br-25">
+                                            <span class="link-effect">
+                                                <span class="effect-1">Join this Plan</span>
+                                                <span class="effect-1">Join this Plan</span>
+                                            </span>
+                                            <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span>
+                                        </a>
+                                        <h4>Key Features</h4>
+                                    </div>
+                                        <ul class="features">
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> 3 Users availble</li>
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> Limited tools</li>
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> Unlimited Supports</li>
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> API Access</li>
+                                            <li class="disabled"><span class="checkmark"><i class="fa-solid fa-circle-x"></i></span> Premium apps</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="tv-pricing-card wow fadeInUp" data-wow-delay=".9s">
+                            <div class="pricing-inner-box">
+                                <div class="pricing-inner">
+                                    <div class="pricing-plan">
+                                        <h5 class="plan">Business</h5>
+                                        <div class="price">
+                                            <h2>39 USD</h2>
+                                            <span class="billing-cycle">/ month</span>
+                                        </div>
+                                        <p>Organize Daily Task by free</p>
+                                        <a href="contact.html" class="theme-btn mt-25 w-100 br-25">
+                                            <span class="link-effect">
+                                                <span class="effect-1">Join this Plan</span>
+                                                <span class="effect-1">Join this Plan</span>
+                                            </span>
+                                            <span class="arrow1"><i class="fa-solid fa-arrow-right"></i></span>
+                                        </a>
+                                        <h4>Key Features</h4>
+                                    </div>
+                                        <ul class="features">
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> 3 Users availble</li>
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> Limited tools</li>
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> Unlimited Supports</li>
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> API Access</li>
+                                            <li><span class="checkmark"><i class="fa-solid fa-circle-check"></i></span> Premium apps</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        
+        <!--==============================
+        Call To Action
+        ==============================-->
+        <section class="tv-cta-section inner bg-light">
+            <div class="container border-top">
+                <div class="row gy-30 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="cta-content-wrapper">
+                           <div class="title-wrap three" data-wow-duration="1.5s" data-wow-delay=".4s">
+                                <div class="sub-title-2 text-theme"><i class="fa-solid fa-circle-check"></i>Get In Touch</div>
+                                <h2 class="sec-title">Let’s Collaborate with Us</h2>
+                                <p>Collaboratively supply bricks-and-clicks metrics for maintainable users from <br> reinvent unique value for just in time consult.</p>
+                            </div>
+                            <a href="contact.html" class="theme-btn">
+                                <span class="link-effect">
+                                    <span class="effect-1">Contact with Us</span>
+                                    <span class="effect-1">Contact with Us</span>
+                                </span>
+                                <span class="arrow-all">
+                                    <i>
+                                        <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#1053f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <svg width="16" height="19" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 6H10M10 6L6 2M10 6L6 10" stroke="#1053f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </i>
+                                </span>
+                            </a>
+                       </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-grid">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="lines2">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="image-box">
+                                <div class="image-item"><img src="{{ asset('public/assets/images/service/details01.webp') }}" alt="Person 1"></div>
+                                <div class="image-item"><div class="icon"><i class="icon-handshake"></i></div></div>
+                                <div class="image-item"><img src="{{ asset('public/assets/images/service/details02.webp') }}" alt="Person 3"></div>
+                                <div class="image-item"><img src="{{ asset('public/assets/images/service/details03.webp') }}" alt="Person 4"></div>
+                                <div class="image-item"><img src="{{ asset('public/assets/images/service/details04.webp') }}" alt="Person 5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!--==============================
+        Newsletter Section
+        ==============================-->
+        <section class="newsletter-section mb--75">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="newsletter">
+                            <div class="arrow-shape md-d-none"><img src="{{ asset('public/assets/images/newsletter/arrow-shape.webp') }}" alt=""></div>
+                            <div class="bg image"><img class="br-30" src="{{ asset('public/assets/images/newsletter/hm1-bg01.webp') }}" alt=""></div>
+                            <div class="thumb d-none d-xl-block">
+                                <img src="{{ asset('public/assets/images/newsletter/img01.webp') }}" alt="thumb">
+                             </div>
+                             <div class="image-text">
+                                <img src="{{ asset('public/assets/images/icons/check-circle2.png') }}" alt="">
+                                <h3 class="title title-anim" data-animation="bounce-in">Subscribe Our Newsletter <br> For Latest Updates</h3>
+                             </div>
+                                <form class="newsletter-form" action="https://formspree.io/f/mzbnjrnb" method="post">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="email" value="" placeholder="Email Address" autocomplete="on" required="">
+                                        <button type="submit">
+                                            <i class="far fa-paper-plane"></i>
+                                            <span class="btn-title"></span>
+                                        </button>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 @endsection

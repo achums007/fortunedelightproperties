@@ -28,17 +28,17 @@ class HomeController extends Controller
 
     public function projects()
     {
-        return view('project');
+        return view('projects');
     }
 
-    public function blog()
-    {
-        return view('blog');
-    }
+    // public function blog()
+    // {
+    //     return view('blog');
+    // }
 
-    public function blogDetail($id)
-    {
-        // For demonstration, we can pass the ID to the view
-        return view('blog-detail', ['id' => $id]);
-    }
+    // public function blogDetail($id)
+    // {
+    //     // For demonstration, we can pass the ID to the view
+    //     return view('blog-detail', ['id' => $id]);
+    // }
 }

@@ -1238,78 +1238,78 @@
         <!--==============================
         Blog Section
         ==============================-->
-        <section class="tv-blog-section space bg-color2">
-            <div class="container">
+        <!--<section class="tv-blog-section space bg-color2">-->
+        <!--    <div class="container">-->
                 <!-- Section Title -->
-                <div class="row">
-                    <div class="col-lg-12">
-                            <div class="title-wrap text-center">
-                                <div class="sub-title-2  text-theme"><i class="fa-solid fa-circle-check"></i>Latest Blog</div>
-                                <h2 class="sec-title">Read our Latest Insights from <br> Update Blog Posts</h2>
-                            </div>
-                    </div>
-                </div>
-                <div class="row gy-25">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <article class="blog-single-box style-3">
-                            <div class="inner-box">
-                                <div class="blog-image">
-                                    <img src="{{ asset('public/assets/images/blog/blog-grid02.webp') }}" alt="Blog Image">
-                                    <div class="category-tag">BUSINESS</div>
-                                </div>
-                                <div class="blog-content">
-                                    <h4 class="title"><a href="blog-details.html">10 Free  Marketing tools <br> Growing Business</a></h4>
-                                    <p class="text">Technically into chain to references to main extensive Dramatically faster</p>
-                                    <div class="pt-25 pb-20"><div class="border dark"></div></div>
-                                    <div class="blog-meta">
-                                        <div class="date">01 Jan, 2026</div>
-                                        <span>By - FDP</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <article class="blog-single-box style-3">
-                            <div class="inner-box">
-                                <div class="blog-image">
-                                    <img src="{{ asset('public/assets/images/blog/blog-grid03.webp') }}" alt="Blog Image">
-                                    <div class="category-tag">MARKETING</div>
-                                </div>
-                                <div class="blog-content">
-                                    <h4 class="title"><a href="blog-details.html">Most popular Promt for Sales <br> Growth in 2025</a></h4>
-                                    <p class="text">Technically into chain to references to main extensive Dramatically faster</p>
-                                    <div class="pt-25 pb-20"><div class="border dark"></div></div>
-                                    <div class="blog-meta">
-                                        <div class="date">01 Jan, 2026</div>
-                                        <span>By - FDP</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <article class="blog-single-box style-3">
-                            <div class="inner-box">
-                                <div class="blog-image">
-                                    <img src="{{ asset('public/assets/images/blog/blog03.webp') }}" alt="Blog Image">
-                                    <div class="category-tag">TECHNOLOGY</div>
-                                </div> 
-                                <div class="blog-content">
-                                    <h4 class="title"><a href="blog-details.html">Installation Sales Navigator <br>Extension on Chrome</a></h4>
-                                    <p class="text">Technically into chain to references to main extensive Dramatically faster</p>
-                                    <div class="pt-25 pb-20"><div class="border dark"></div></div>
-                                    <div class="blog-meta">
-                                        <div class="date">01 Jan, 2026</div>
-                                        <span>By - FDP</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    </div>
-                </div>
-        </section>
+        <!--        <div class="row">-->
+        <!--            <div class="col-lg-12">-->
+        <!--                    <div class="title-wrap text-center">-->
+        <!--                        <div class="sub-title-2  text-theme"><i class="fa-solid fa-circle-check"></i>Latest Blog</div>-->
+        <!--                        <h2 class="sec-title">Read our Latest Insights from <br> Update Blog Posts</h2>-->
+        <!--                    </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="row gy-25">-->
+        <!--            <div class="col-lg-4 col-md-6 col-sm-6">-->
+        <!--                <article class="blog-single-box style-3">-->
+        <!--                    <div class="inner-box">-->
+        <!--                        <div class="blog-image">-->
+        <!--                            <img src="{{ asset('public/assets/images/blog/blog-grid02.webp') }}" alt="Blog Image">-->
+        <!--                            <div class="category-tag">BUSINESS</div>-->
+        <!--                        </div>-->
+        <!--                        <div class="blog-content">-->
+        <!--                            <h4 class="title"><a href="blog-details.html">10 Free  Marketing tools <br> Growing Business</a></h4>-->
+        <!--                            <p class="text">Technically into chain to references to main extensive Dramatically faster</p>-->
+        <!--                            <div class="pt-25 pb-20"><div class="border dark"></div></div>-->
+        <!--                            <div class="blog-meta">-->
+        <!--                                <div class="date">01 Jan, 2026</div>-->
+        <!--                                <span>By - FDP</span>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </article>-->
+        <!--            </div>-->
+        <!--            <div class="col-lg-4 col-md-6 col-sm-6">-->
+        <!--                <article class="blog-single-box style-3">-->
+        <!--                    <div class="inner-box">-->
+        <!--                        <div class="blog-image">-->
+        <!--                            <img src="{{ asset('public/assets/images/blog/blog-grid03.webp') }}" alt="Blog Image">-->
+        <!--                            <div class="category-tag">MARKETING</div>-->
+        <!--                        </div>-->
+        <!--                        <div class="blog-content">-->
+        <!--                            <h4 class="title"><a href="blog-details.html">Most popular Promt for Sales <br> Growth in 2025</a></h4>-->
+        <!--                            <p class="text">Technically into chain to references to main extensive Dramatically faster</p>-->
+        <!--                            <div class="pt-25 pb-20"><div class="border dark"></div></div>-->
+        <!--                            <div class="blog-meta">-->
+        <!--                                <div class="date">01 Jan, 2026</div>-->
+        <!--                                <span>By - FDP</span>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </article>-->
+        <!--            </div>-->
+        <!--            <div class="col-lg-4 col-md-6 col-sm-6">-->
+        <!--                <article class="blog-single-box style-3">-->
+        <!--                    <div class="inner-box">-->
+        <!--                        <div class="blog-image">-->
+        <!--                            <img src="{{ asset('public/assets/images/blog/blog03.webp') }}" alt="Blog Image">-->
+        <!--                            <div class="category-tag">TECHNOLOGY</div>-->
+        <!--                        </div> -->
+        <!--                        <div class="blog-content">-->
+        <!--                            <h4 class="title"><a href="blog-details.html">Installation Sales Navigator <br>Extension on Chrome</a></h4>-->
+        <!--                            <p class="text">Technically into chain to references to main extensive Dramatically faster</p>-->
+        <!--                            <div class="pt-25 pb-20"><div class="border dark"></div></div>-->
+        <!--                            <div class="blog-meta">-->
+        <!--                                <div class="date">01 Jan, 2026</div>-->
+        <!--                                <span>By - FDP</span>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </article>-->
+        <!--            </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--</section>-->
 
 
 
@@ -1325,7 +1325,7 @@
                             <div class="bg image"><img class="br-30" src="{{ asset('public/assets/image/cta/hm2-bg01.webp') }}" alt=""></div>
                             <!--<div class="bg image"><img class="br-30" src="{{ asset('public/assets/images/newsletter/hm1-bg01.webp') }}" alt=""></div>-->
                             <div class="thumb d-none d-xl-block">
-                                <img src="{{ asset('public/assets/images/newsletter/img01.webp') }}" alt="thumb">
+                                <!--<img src="{{ asset('public/assets/images/newsletter/img01.webp') }}" alt="thumb">-->
                              </div>
                              <div class="image-text">
                                 <img src="{{ asset('public/assets/images/icons/check-circle2.png') }}" alt="">
