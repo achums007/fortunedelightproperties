@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+<<<<<<< HEAD
 @section('title', 'Our Services - Fortune Delight Properties')
 
 @section('content')
@@ -33,6 +34,11 @@
         </div>
     </div>
 </section>
+=======
+@section('title', 'Home - Fortune Delight Properties')
+
+@section('content')
+>>>>>>> main
 
 <!--==============================
 Feature Section One
@@ -166,6 +172,7 @@ Service Section Two
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
                     <div class="tv-service-single-box wow fadeInUp" data-wow-delay=".4s">
                         <div class="inner-box">
@@ -320,4 +327,10 @@ Process Section One
         </div>
     </div>
 </section>
+=======
+            </div>
+        </section>
+
+
+>>>>>>> main
 @endsection
